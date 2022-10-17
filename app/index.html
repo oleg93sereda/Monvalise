@@ -1,0 +1,723 @@
+<!--#set var="title" value="Monvalise 5" -->
+<!--#include virtual="/parts/header.html" -->
+
+<div class="breadcrumb_wrap">
+	<div class="container">
+		<nav aria-label="breadcrumb">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item"><a href="#">Головна</a></li>
+				<li class="breadcrumb-item active" aria-current="page">Каталог одягу</li>
+			</ol>
+		</nav>
+	</div>
+</div>
+
+<div class="catalog_wrap">
+	<div class="container">
+		<div class="row">
+			<div class="col ">
+				<h1 class="title-page">Каталог одягу</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col subtitle-page">
+				<div class="d-flex justify-content-between align-items-center">
+					<h2>Фільтри</h2>
+					<div class="sorting-catalog">
+						<div class="subtitle-dropdown">Сортувати за:</div>
+						<div class="dropdown text-end ">
+							<a href="#" class="d-block link-dark text-decoration-none dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="true">
+								За замовчуванням
+							  </a>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="#">Від дешевих до дорогих</a></li>
+								<li><a class="dropdown-item" href="#">Від дорогих до дешевих</a></li>
+								<li><a class="dropdown-item" href="#">Популярність</a></li>
+							</ul>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-3 sidebar">
+				<div class="filter__item">
+					<div class="filter__item-title">
+						<span class="name_filter">Категорії</span>
+						<div class="icon_arrow">
+							<svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M0.292892 2.20712L1.70711 0.792908L9 8.0858L16.2929 0.792908L17.7071 2.20712L9 10.9142L0.292892 2.20712Z" fill="#747778"/>
+							</svg>								
+						</div>
+					</div>
+					<div class="filter__item-content">
+						<div class="form-group">
+							<input type="checkbox" id="ct_1_1">
+							<label for="ct_1_1">Джинси</label>
+						</div>
+						<div class="form-group">
+							<input type="checkbox" id="ct_1_2">
+							<label for="ct_1_2">Куртки</label>
+						</div>
+						<div class="form-group">
+							<input type="checkbox" id="ct_1_3">
+							<label for="ct_1_3">Піджаки</label>
+						</div>
+					</div>
+				</div>
+				<div class="filter__item">
+					<div class="filter__item-title">
+						<span class="name_filter">Ціна</span>
+						<div class="icon_arrow">
+							<svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M0.292892 2.20712L1.70711 0.792908L9 8.0858L16.2929 0.792908L17.7071 2.20712L9 10.9142L0.292892 2.20712Z" fill="#747778"/>
+							</svg>								
+						</div>
+					</div>
+					<div class="filter__item-content">
+						
+						<div id="slider-range" class="price-filter-range" name="rangeInput"></div>
+
+						<div class="price-range-field-wrap">
+							<div class="price-range-field__item">
+								<div class="subtitle">Від</div>
+								<input type="text" min=0 max="49999" oninput="validity.valid||(value='0');" id="min_price" class="price-range-field" />
+							</div>
+							<div class="price-range-field__item">
+								<div class="subtitle">До</div>
+								<input type="text" min=0 max="50000" oninput="validity.valid||(value='20465');" id="max_price" class="price-range-field" />
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="filter__item">
+					<div class="filter__item-title">
+						<span class="name_filter">Продавець</span>
+						<div class="icon_arrow">
+							<svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M0.292892 2.20712L1.70711 0.792908L9 8.0858L16.2929 0.792908L17.7071 2.20712L9 10.9142L0.292892 2.20712Z" fill="#747778"/>
+							</svg>								
+						</div>
+					</div>
+					<div class="filter__item-content">
+						<div class="form-group">
+							<input type="checkbox" id="ct_3_1">
+							<label for="ct_3_1">LoveBrand</label>
+						</div>
+						<div class="form-group">
+							<input type="checkbox" id="ct_3_2">
+							<label for="ct_3_2">Sell_For_Men</label>
+						</div>
+						<div class="form-group">
+							<input type="checkbox" id="ct_3_3">
+							<label for="ct_3_3">Brandear</label>
+						</div>
+						<div class="form-group">
+							<input type="checkbox" id="ct_3_4">
+							<label for="ct_3_4">Alexalex</label>
+						</div>
+					</div>
+				</div>
+				<div class="filter__item">
+					<div class="filter__item-title">
+						<span class="name_filter">Бренд</span>
+						<div class="icon_arrow">
+							<svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M0.292892 2.20712L1.70711 0.792908L9 8.0858L16.2929 0.792908L17.7071 2.20712L9 10.9142L0.292892 2.20712Z" fill="#747778"/>
+							</svg>								
+						</div>
+					</div>
+					<div class="filter__item-content">
+						<div class="form-group">
+							<input type="checkbox" id="ct_4_1">
+							<label for="ct_4_1">LOUIS VUITTON</label>
+						</div>
+						<div class="form-group">
+							<input type="checkbox" id="ct_4_2">
+							<label for="ct_4_2">THOM BROWNE</label>
+						</div>
+						<div class="form-group">
+							<input type="checkbox" id="ct_4_3">
+							<label for="ct_4_3">CANALI</label>
+						</div>
+						<div class="form-group">
+							<input type="checkbox" id="ct_4_4">
+							<label for="ct_4_4">ELENA GHISELINI</label>
+						</div>
+						<div class="form-group">
+							<input type="checkbox" id="ct_4_5">
+							<label for="ct_4_5">ACNE</label>
+						</div>
+						<div class="form-group">
+							<input type="checkbox" id="ct_4_6">
+							<label for="ct_4_6">GUCCI</label>
+						</div>
+					</div>
+				</div>
+				<div class="filter__item">
+					<div class="filter__item-title">
+						<span class="name_filter">Стать</span>
+						<div class="icon_arrow">
+							<svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M0.292892 2.20712L1.70711 0.792908L9 8.0858L16.2929 0.792908L17.7071 2.20712L9 10.9142L0.292892 2.20712Z" fill="#747778"/>
+							</svg>								
+						</div>
+					</div>
+					<div class="filter__item-content">
+						<div class="form-group">
+							<input type="checkbox" id="ct_5_1">
+							<label for="ct_5_1">Чоловікам</label>
+						</div>
+						<div class="form-group">
+							<input type="checkbox" id="ct_5_2">
+							<label for="ct_5_2">Жінкам</label>
+						</div>
+						<div class="form-group">
+							<input type="checkbox" id="ct_5_3">
+							<label for="ct_5_3">Унісекс</label>
+						</div>
+					</div>
+				</div>
+				<div class="filter__item">
+					<div class="filter__item-title">
+						<span class="name_filter">Розмір</span>
+						<div class="icon_arrow">
+							<svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M0.292892 2.20712L1.70711 0.792908L9 8.0858L16.2929 0.792908L17.7071 2.20712L9 10.9142L0.292892 2.20712Z" fill="#747778"/>
+							</svg>								
+						</div>
+					</div>
+					<div class="filter__item-content">
+						<div class="form-group">
+							<input type="checkbox" id="ct_6_1">
+							<label for="ct_1_1">S</label>
+						</div>
+						<div class="form-group">
+							<input type="checkbox" id="ct_6_2">
+							<label for="ct_6_2">M</label>
+						</div>
+						<div class="form-group">
+							<input type="checkbox" id="ct_6_3">
+							<label for="ct_6_3">L</label>
+						</div>
+						<div class="form-group">
+							<input type="checkbox" id="ct_6_4">
+							<label for="ct_6_4">XL</label>
+						</div>
+					</div>
+				</div>
+				<div class="filter__item">
+					<div class="filter__item-title">
+						<span class="name_filter">Колір</span>
+						<div class="icon_arrow">
+							<svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M0.292892 2.20712L1.70711 0.792908L9 8.0858L16.2929 0.792908L17.7071 2.20712L9 10.9142L0.292892 2.20712Z" fill="#747778"/>
+							</svg>								
+						</div>
+					</div>
+					<div class="filter__item-content">
+						<div class="form-group">
+							<input type="checkbox" id="ct_7_1">
+							<label for="ct_7_1">Білий</label>
+						</div>
+						<div class="form-group">
+							<input type="checkbox" id="ct_7_2">
+							<label for="ct_7_2">Чорний</label>
+						</div>
+						<div class="form-group">
+							<input type="checkbox" id="ct_7_3">
+							<label for="ct_7_3">Червоний</label>
+						</div>
+						<div class="form-group">
+							<input type="checkbox" id="ct_7_4">
+							<label for="ct_7_4">Зелений</label>
+						</div>
+						<div class="form-group">
+							<input type="checkbox" id="ct_7_5">
+							<label for="ct_7_5">Коричневий</label>
+						</div>
+					</div>
+				</div>
+				<div class="filter__item">
+					<div class="filter__item-title">
+						<span class="name_filter">Матеріал</span>
+						<div class="icon_arrow">
+							<svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M0.292892 2.20712L1.70711 0.792908L9 8.0858L16.2929 0.792908L17.7071 2.20712L9 10.9142L0.292892 2.20712Z" fill="#747778"/>
+							</svg>								
+						</div>
+					</div>
+					<div class="filter__item-content">
+						<div class="form-group">
+							<input type="checkbox" id="ct_8_1">
+							<label for="ct_8_1">Хлопок</label>
+						</div>
+						<div class="form-group">
+							<input type="checkbox" id="ct_8_2">
+							<label for="ct_8_2">Бавовна</label>
+						</div>
+					</div>
+				</div>
+				<div class="filter__item">
+					<div class="filter__item-title">
+						<span class="name_filter">Сезон</span>
+						<div class="icon_arrow">
+							<svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M0.292892 2.20712L1.70711 0.792908L9 8.0858L16.2929 0.792908L17.7071 2.20712L9 10.9142L0.292892 2.20712Z" fill="#747778"/>
+							</svg>								
+						</div>
+					</div>
+					<div class="filter__item-content">
+						<div class="form-group">
+							<input type="checkbox" id="ct_9_1">
+							<label for="ct_9_1">Літо</label>
+						</div>
+						<div class="form-group">
+							<input type="checkbox" id="ct_9_2">
+							<label for="ct_9_2">Зима</label>
+						</div>
+						<div class="form-group">
+							<input type="checkbox" id="ct_9_3">
+							<label for="ct_9_3">Взесизонка</label>
+						</div>
+					</div>
+				</div>
+				<div class="filter__item">
+					<div class="filter__item-title">
+						<span class="name_filter">Стиль</span>
+						<div class="icon_arrow">
+							<svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M0.292892 2.20712L1.70711 0.792908L9 8.0858L16.2929 0.792908L17.7071 2.20712L9 10.9142L0.292892 2.20712Z" fill="#747778"/>
+							</svg>								
+						</div>
+					</div>
+					<div class="filter__item-content">
+						<div class="form-group">
+							<input type="checkbox" id="ct_10_1">
+							<label for="ct_10_1">Кежуал</label>
+						</div>
+						<div class="form-group">
+							<input type="checkbox" id="ct_10_2">
+							<label for="ct_10_2">Класичний</label>
+						</div>
+						<div class="form-group">
+							<input type="checkbox" id="ct_10_3">
+							<label for="ct_10_3">Спортивний</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-9 catalog album">
+				<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+					
+					<div class="col">
+						<div class="card">
+							<div class="card-img-top sale">
+								<ul class="type-product-list">
+									<li class="type-product-list__item organic">organic</li>
+								</ul>
+								<a class="favorite-wrap">
+									<svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M9.53735 3.19604L9.46969 3.26371C7.70072 1.49473 4.83264 1.49473 3.06367 3.2637C1.2947 5.03268 1.29469 7.90075 3.06367 9.66973L6.79699 13.403C8.56597 15.172 11.434 15.172 13.203 13.403L16.9364 9.6697C18.7053 7.90073 18.7053 5.03266 16.9364 3.26368C15.1674 1.49471 12.2993 1.49471 10.5303 3.26368L10.0677 3.72635L9.53735 3.19604ZM14.2637 14.4637L17.997 10.7304C20.3518 8.3756 20.3518 4.55778 17.997 2.20302C15.8118 0.0178142 12.3667 -0.139532 10 1.73099C7.63335 -0.139506 4.18821 0.0178459 2.00301 2.20304C-0.35175 4.5578 -0.351753 8.37563 2.00301 10.7304L5.73633 14.4637L5.73635 14.4637C8.09111 16.8185 11.9089 16.8185 14.2637 14.4637L14.2637 14.4637Z" fill="#2D3132"/>
+									</svg>										
+								</a>
+								<a href="#" class="card-img-link"><img src="./images/dist/clothes/pants.jpeg" alt=""></a>
+								<ul class="type-sale-list">
+									<li class="type-sale-list__item top">ТОП</li>
+								</ul>
+							</div>
+							<div class="card-body">
+								<div class="cart-brand">LOUIS VUITTON</div>
+								<a href="#" class="card-text card-text-link">Темно-сині джинси Louis Vuitton</a>
+								<div class="d-flex justify-content-between align-items-center">
+									<div class="price-group">
+										<div class="old">5 499 ₴</div>
+										<div class="current">3 799 ₴ </div>
+									</div>
+									<div class="seller-info">
+										<div class="location">
+											<div class="icon_svg">
+												<svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M2.03019 1.77684C0.562869 3.18058 0.387088 5.39908 1.61646 6.99837L5 11.4L8.38354 6.99837C9.61292 5.39908 9.43714 3.18058 7.96982 1.77684C6.32963 0.207728 3.67037 0.207728 2.03019 1.77684ZM5 6.60001C5.99412 6.60001 6.8 5.79412 6.8 4.80001C6.8 3.80589 5.99412 3.00001 5 3.00001C4.00589 3.00001 3.2 3.80589 3.2 4.80001C3.2 5.79412 4.00589 6.60001 5 6.60001Z" fill="#2D3132"/>
+												</svg>													
+											</div>
+											<div class="value_location">Херсон</div>
+										</div>
+										<div class="nickname">
+											<div class="icon"><img src="./images/dist/avatar/avatar_2.png" alt=""></div>
+											<div class="value">LoveBrand</div>
+										</div>
+									</div>
+								</div>
+						  	</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card">
+							<div class="card-img-top sale">
+								<ul class="type-product-list">
+									<li class="type-product-list__item organic">organic</li>
+								</ul>
+								<a class="favorite-wrap">
+									<svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M9.53735 3.19604L9.46969 3.26371C7.70072 1.49473 4.83264 1.49473 3.06367 3.2637C1.2947 5.03268 1.29469 7.90075 3.06367 9.66973L6.79699 13.403C8.56597 15.172 11.434 15.172 13.203 13.403L16.9364 9.6697C18.7053 7.90073 18.7053 5.03266 16.9364 3.26368C15.1674 1.49471 12.2993 1.49471 10.5303 3.26368L10.0677 3.72635L9.53735 3.19604ZM14.2637 14.4637L17.997 10.7304C20.3518 8.3756 20.3518 4.55778 17.997 2.20302C15.8118 0.0178142 12.3667 -0.139532 10 1.73099C7.63335 -0.139506 4.18821 0.0178459 2.00301 2.20304C-0.35175 4.5578 -0.351753 8.37563 2.00301 10.7304L5.73633 14.4637L5.73635 14.4637C8.09111 16.8185 11.9089 16.8185 14.2637 14.4637L14.2637 14.4637Z" fill="#2D3132"/>
+									</svg>										
+								</a>
+								<a href="#" class="card-img-link"><img src="./images/dist/clothes/blazer_1.jpeg" alt=""></a>
+								<ul class="type-sale-list">
+									<li class="type-sale-list__item top">ТОП</li>
+								</ul>
+							</div>
+							<div class="card-body">
+								<div class="cart-brand">THOM BROWNE</div>
+								<a href="#" class="card-text card-text-link">Чорний піджак Thom Browne</a>
+								<div class="d-flex justify-content-between align-items-center">
+									<div class="price-group">
+										<div class="old">11 999 ₴</div>
+										<div class="current">8 599 ₴ </div>
+									</div>
+									<div class="seller-info">
+										<div class="location">
+											<div class="icon_svg">
+												<svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M2.03019 1.77684C0.562869 3.18058 0.387088 5.39908 1.61646 6.99837L5 11.4L8.38354 6.99837C9.61292 5.39908 9.43714 3.18058 7.96982 1.77684C6.32963 0.207728 3.67037 0.207728 2.03019 1.77684ZM5 6.60001C5.99412 6.60001 6.8 5.79412 6.8 4.80001C6.8 3.80589 5.99412 3.00001 5 3.00001C4.00589 3.00001 3.2 3.80589 3.2 4.80001C3.2 5.79412 4.00589 6.60001 5 6.60001Z" fill="#2D3132"/>
+												</svg>													
+											</div>
+											<div class="value_location">Хмельницький</div>
+										</div>
+										<div class="nickname">
+											<div class="icon"><img src="./images/dist/avatar/avatar_3.png" alt=""></div>
+											<div class="value">Sell_For_Men</div>
+										</div>
+									</div>
+								</div>
+						  	</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card">
+							<div class="card-img-top">
+								<ul class="type-product-list">
+									<li class="type-product-list__item organic">organic</li>
+								</ul>
+								<a class="favorite-wrap">
+									<svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M9.53735 3.19604L9.46969 3.26371C7.70072 1.49473 4.83264 1.49473 3.06367 3.2637C1.2947 5.03268 1.29469 7.90075 3.06367 9.66973L6.79699 13.403C8.56597 15.172 11.434 15.172 13.203 13.403L16.9364 9.6697C18.7053 7.90073 18.7053 5.03266 16.9364 3.26368C15.1674 1.49471 12.2993 1.49471 10.5303 3.26368L10.0677 3.72635L9.53735 3.19604ZM14.2637 14.4637L17.997 10.7304C20.3518 8.3756 20.3518 4.55778 17.997 2.20302C15.8118 0.0178142 12.3667 -0.139532 10 1.73099C7.63335 -0.139506 4.18821 0.0178459 2.00301 2.20304C-0.35175 4.5578 -0.351753 8.37563 2.00301 10.7304L5.73633 14.4637L5.73635 14.4637C8.09111 16.8185 11.9089 16.8185 14.2637 14.4637L14.2637 14.4637Z" fill="#2D3132"/>
+									</svg>										
+								</a>
+								<a href="#" class="card-img-link"><img src="./images/dist/clothes/blazer_2.jpeg" alt=""></a>
+								<ul class="type-sale-list">
+									<li class="type-sale-list__item top">ТОП</li>
+								</ul>
+							</div>
+							<div class="card-body">
+								<div class="cart-brand">CANALI</div>
+								<a href="#" class="card-text card-text-link">Вовняний піджак Canali</a>
+								<div class="d-flex justify-content-between align-items-center">
+									<div class="price-group">
+										<div class="old">4 999 ₴</div>
+										<div class="current">2 599 ₴ </div>
+									</div>
+									<div class="seller-info">
+										<div class="location">
+											<div class="icon_svg">
+												<svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M2.03019 1.77684C0.562869 3.18058 0.387088 5.39908 1.61646 6.99837L5 11.4L8.38354 6.99837C9.61292 5.39908 9.43714 3.18058 7.96982 1.77684C6.32963 0.207728 3.67037 0.207728 2.03019 1.77684ZM5 6.60001C5.99412 6.60001 6.8 5.79412 6.8 4.80001C6.8 3.80589 5.99412 3.00001 5 3.00001C4.00589 3.00001 3.2 3.80589 3.2 4.80001C3.2 5.79412 4.00589 6.60001 5 6.60001Z" fill="#2D3132"/>
+												</svg>													
+											</div>
+											<div class="value_location">Хмельницький</div>
+										</div>
+										<div class="nickname">
+											<div class="icon"><img src="./images/dist/avatar/avatar_3.png" alt=""></div>
+											<div class="value">Sell_For_Men</div>
+										</div>
+									</div>
+								</div>
+						  	</div>
+						</div>
+					</div>
+
+					<div class="col">
+						<div class="card">
+							<div class="card-img-top">
+								<ul class="type-product-list">
+									<li class="type-product-list__item organic">organic</li>
+								</ul>
+								<a class="favorite-wrap">
+									<svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M9.53735 3.19604L9.46969 3.26371C7.70072 1.49473 4.83264 1.49473 3.06367 3.2637C1.2947 5.03268 1.29469 7.90075 3.06367 9.66973L6.79699 13.403C8.56597 15.172 11.434 15.172 13.203 13.403L16.9364 9.6697C18.7053 7.90073 18.7053 5.03266 16.9364 3.26368C15.1674 1.49471 12.2993 1.49471 10.5303 3.26368L10.0677 3.72635L9.53735 3.19604ZM14.2637 14.4637L17.997 10.7304C20.3518 8.3756 20.3518 4.55778 17.997 2.20302C15.8118 0.0178142 12.3667 -0.139532 10 1.73099C7.63335 -0.139506 4.18821 0.0178459 2.00301 2.20304C-0.35175 4.5578 -0.351753 8.37563 2.00301 10.7304L5.73633 14.4637L5.73635 14.4637C8.09111 16.8185 11.9089 16.8185 14.2637 14.4637L14.2637 14.4637Z" fill="#2D3132"/>
+									</svg>										
+								</a>
+								<a href="#" class="card-img-link"><img src="./images/dist/clothes/bag_1.jpeg" alt=""></a>
+								<ul class="type-sale-list">
+									<li class="type-sale-list__item top">ТОП</li>
+								</ul>
+							</div>
+							<div class="card-body">
+								<div class="cart-brand">LOUIS VUITTON</div>
+								<a href="#" class="card-text card-text-link">Клатч Louis Vuitton Limelight</a>
+								<div class="d-flex justify-content-between align-items-center">
+									<div class="price-group">
+										<div class="old">4 999 ₴</div>
+										<div class="current">3 499 ₴ </div>
+									</div>
+									<div class="seller-info">
+										<div class="location">
+											<div class="icon_svg">
+												<svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M2.03019 1.77684C0.562869 3.18058 0.387088 5.39908 1.61646 6.99837L5 11.4L8.38354 6.99837C9.61292 5.39908 9.43714 3.18058 7.96982 1.77684C6.32963 0.207728 3.67037 0.207728 2.03019 1.77684ZM5 6.60001C5.99412 6.60001 6.8 5.79412 6.8 4.80001C6.8 3.80589 5.99412 3.00001 5 3.00001C4.00589 3.00001 3.2 3.80589 3.2 4.80001C3.2 5.79412 4.00589 6.60001 5 6.60001Z" fill="#2D3132"/>
+												</svg>													
+											</div>
+											<div class="value_location">Дніпро</div>
+										</div>
+										<div class="nickname">
+											<div class="icon"><img src="./images/dist/avatar/avatar_4.png" alt=""></div>
+											<div class="value">Brandear</div>
+										</div>
+									</div>
+								</div>
+						  	</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card">
+							<div class="card-img-top organic">
+								<ul class="type-product-list">
+									<li class="type-product-list__item organic">organic</li>
+								</ul>
+								<a class="favorite-wrap">
+									<svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M9.53735 3.19604L9.46969 3.26371C7.70072 1.49473 4.83264 1.49473 3.06367 3.2637C1.2947 5.03268 1.29469 7.90075 3.06367 9.66973L6.79699 13.403C8.56597 15.172 11.434 15.172 13.203 13.403L16.9364 9.6697C18.7053 7.90073 18.7053 5.03266 16.9364 3.26368C15.1674 1.49471 12.2993 1.49471 10.5303 3.26368L10.0677 3.72635L9.53735 3.19604ZM14.2637 14.4637L17.997 10.7304C20.3518 8.3756 20.3518 4.55778 17.997 2.20302C15.8118 0.0178142 12.3667 -0.139532 10 1.73099C7.63335 -0.139506 4.18821 0.0178459 2.00301 2.20304C-0.35175 4.5578 -0.351753 8.37563 2.00301 10.7304L5.73633 14.4637L5.73635 14.4637C8.09111 16.8185 11.9089 16.8185 14.2637 14.4637L14.2637 14.4637Z" fill="#2D3132"/>
+									</svg>										
+								</a>
+								<a href="#" class="card-img-link"><img src="./images/dist/clothes/bag_2.jpeg" alt=""></a>
+								<ul class="type-sale-list">
+									<li class="type-sale-list__item top">ТОП</li>
+								</ul>
+							</div>
+							<div class="card-body">
+								<div class="cart-brand">ELENA GHISELINI</div>
+								<a href="#" class="card-text card-text-link">Сумка з декором Elena Ghisellini</a>
+								<div class="d-flex justify-content-between align-items-center">
+									<div class="price-group">
+										<div class="old">1 999 ₴</div>
+										<div class="current">1 599 ₴ </div>
+									</div>
+									<div class="seller-info">
+										<div class="location">
+											<div class="icon_svg">
+												<svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M2.03019 1.77684C0.562869 3.18058 0.387088 5.39908 1.61646 6.99837L5 11.4L8.38354 6.99837C9.61292 5.39908 9.43714 3.18058 7.96982 1.77684C6.32963 0.207728 3.67037 0.207728 2.03019 1.77684ZM5 6.60001C5.99412 6.60001 6.8 5.79412 6.8 4.80001C6.8 3.80589 5.99412 3.00001 5 3.00001C4.00589 3.00001 3.2 3.80589 3.2 4.80001C3.2 5.79412 4.00589 6.60001 5 6.60001Z" fill="#2D3132"/>
+												</svg>													
+											</div>
+											<div class="value_location">Дніпро</div>
+										</div>
+										<div class="nickname">
+											<div class="icon"><img src="./images/dist/avatar/avatar_4.png" alt=""></div>
+											<div class="value">Brandear</div>
+										</div>
+									</div>
+								</div>
+						  	</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card">
+							<div class="card-img-top">
+								<ul class="type-product-list">
+									<li class="type-product-list__item organic">organic</li>
+								</ul>
+								<a class="favorite-wrap">
+									<svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M9.53735 3.19604L9.46969 3.26371C7.70072 1.49473 4.83264 1.49473 3.06367 3.2637C1.2947 5.03268 1.29469 7.90075 3.06367 9.66973L6.79699 13.403C8.56597 15.172 11.434 15.172 13.203 13.403L16.9364 9.6697C18.7053 7.90073 18.7053 5.03266 16.9364 3.26368C15.1674 1.49471 12.2993 1.49471 10.5303 3.26368L10.0677 3.72635L9.53735 3.19604ZM14.2637 14.4637L17.997 10.7304C20.3518 8.3756 20.3518 4.55778 17.997 2.20302C15.8118 0.0178142 12.3667 -0.139532 10 1.73099C7.63335 -0.139506 4.18821 0.0178459 2.00301 2.20304C-0.35175 4.5578 -0.351753 8.37563 2.00301 10.7304L5.73633 14.4637L5.73635 14.4637C8.09111 16.8185 11.9089 16.8185 14.2637 14.4637L14.2637 14.4637Z" fill="#2D3132"/>
+									</svg>										
+								</a>
+								<a href="#" class="card-img-link"><img src="./images/dist/clothes/sweater.jpeg" alt=""></a>
+								<ul class="type-sale-list">
+									<li class="type-sale-list__item top">ТОП</li>
+								</ul>
+							</div>
+							<div class="card-body">
+								<div class="cart-brand">ACNE</div>
+								<a href="#" class="card-text card-text-link">Бомбер Acne на блискавці</a>
+								<div class="d-flex justify-content-between align-items-center">
+									<div class="price-group">
+										<div class="old">5 999 ₴</div>
+										<div class="current">4 199 ₴ </div>
+									</div>
+									<div class="seller-info">
+										<div class="location">
+											<div class="icon_svg">
+												<svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M2.03019 1.77684C0.562869 3.18058 0.387088 5.39908 1.61646 6.99837L5 11.4L8.38354 6.99837C9.61292 5.39908 9.43714 3.18058 7.96982 1.77684C6.32963 0.207728 3.67037 0.207728 2.03019 1.77684ZM5 6.60001C5.99412 6.60001 6.8 5.79412 6.8 4.80001C6.8 3.80589 5.99412 3.00001 5 3.00001C4.00589 3.00001 3.2 3.80589 3.2 4.80001C3.2 5.79412 4.00589 6.60001 5 6.60001Z" fill="#2D3132"/>
+												</svg>													
+											</div>
+											<div class="value_location">Київ</div>
+										</div>
+										<div class="nickname">
+											<div class="icon"><img src="./images/dist/avatar/avatar_5.png" alt=""></div>
+											<div class="value">Alexalex</div>
+										</div>
+									</div>
+								</div>
+						  	</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card">
+							<div class="card-img-top">
+								<ul class="type-product-list">
+									<li class="type-product-list__item organic">organic</li>
+								</ul>
+								<a class="favorite-wrap">
+									<svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M9.53735 3.19604L9.46969 3.26371C7.70072 1.49473 4.83264 1.49473 3.06367 3.2637C1.2947 5.03268 1.29469 7.90075 3.06367 9.66973L6.79699 13.403C8.56597 15.172 11.434 15.172 13.203 13.403L16.9364 9.6697C18.7053 7.90073 18.7053 5.03266 16.9364 3.26368C15.1674 1.49471 12.2993 1.49471 10.5303 3.26368L10.0677 3.72635L9.53735 3.19604ZM14.2637 14.4637L17.997 10.7304C20.3518 8.3756 20.3518 4.55778 17.997 2.20302C15.8118 0.0178142 12.3667 -0.139532 10 1.73099C7.63335 -0.139506 4.18821 0.0178459 2.00301 2.20304C-0.35175 4.5578 -0.351753 8.37563 2.00301 10.7304L5.73633 14.4637L5.73635 14.4637C8.09111 16.8185 11.9089 16.8185 14.2637 14.4637L14.2637 14.4637Z" fill="#2D3132"/>
+									</svg>										
+								</a>
+								<a href="#" class="card-img-link"><img src="./images/dist/clothes/dress.jpeg" alt=""></a>
+								<ul class="type-sale-list">
+									<li class="type-sale-list__item top">ТОП</li>
+								</ul>
+							</div>
+							<div class="card-body">
+								<div class="cart-brand">GUCCI</div>
+								<a href="#" class="card-text card-text-link">Довга сукня Gucci</a>
+								<div class="d-flex justify-content-between align-items-center">
+									<div class="price-group">
+										<div class="old">11 999 ₴</div>
+										<div class="current">8 599 ₴ </div>
+									</div>
+									<div class="seller-info">
+										<div class="location">
+											<div class="icon_svg">
+												<svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M2.03019 1.77684C0.562869 3.18058 0.387088 5.39908 1.61646 6.99837L5 11.4L8.38354 6.99837C9.61292 5.39908 9.43714 3.18058 7.96982 1.77684C6.32963 0.207728 3.67037 0.207728 2.03019 1.77684ZM5 6.60001C5.99412 6.60001 6.8 5.79412 6.8 4.80001C6.8 3.80589 5.99412 3.00001 5 3.00001C4.00589 3.00001 3.2 3.80589 3.2 4.80001C3.2 5.79412 4.00589 6.60001 5 6.60001Z" fill="#2D3132"/>
+												</svg>													
+											</div>
+											<div class="value_location">Рівне</div>
+										</div>
+										<div class="nickname">
+											<div class="icon"><img src="./images/dist/avatar/avatar_6.png" alt=""></div>
+											<div class="value">SellBuy</div>
+										</div>
+									</div>
+								</div>
+						  	</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card">
+							<div class="card-img-top">
+								<ul class="type-product-list">
+									<li class="type-product-list__item organic">organic</li>
+								</ul>
+								<a class="favorite-wrap">
+									<svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M9.53735 3.19604L9.46969 3.26371C7.70072 1.49473 4.83264 1.49473 3.06367 3.2637C1.2947 5.03268 1.29469 7.90075 3.06367 9.66973L6.79699 13.403C8.56597 15.172 11.434 15.172 13.203 13.403L16.9364 9.6697C18.7053 7.90073 18.7053 5.03266 16.9364 3.26368C15.1674 1.49471 12.2993 1.49471 10.5303 3.26368L10.0677 3.72635L9.53735 3.19604ZM14.2637 14.4637L17.997 10.7304C20.3518 8.3756 20.3518 4.55778 17.997 2.20302C15.8118 0.0178142 12.3667 -0.139532 10 1.73099C7.63335 -0.139506 4.18821 0.0178459 2.00301 2.20304C-0.35175 4.5578 -0.351753 8.37563 2.00301 10.7304L5.73633 14.4637L5.73635 14.4637C8.09111 16.8185 11.9089 16.8185 14.2637 14.4637L14.2637 14.4637Z" fill="#2D3132"/>
+									</svg>										
+								</a>
+								<a href="#" class="card-img-link"><img src="./images/dist/clothes/jacket.jpeg" alt=""></a>
+								<ul class="type-sale-list">
+									<li class="type-sale-list__item top">ТОП</li>
+								</ul>
+							</div>
+							<div class="card-body">
+								<div class="cart-brand">CHANEL</div>
+								<a href="#" class="card-text card-text-link">Помаранчевий бомбер Woolrich</a>
+								<div class="d-flex justify-content-between align-items-center">
+									<div class="price-group">
+										<div class="old">1 999 ₴</div>
+										<div class="current">1 599 ₴ </div>
+									</div>
+									<div class="seller-info">
+										<div class="location">
+											<div class="icon_svg">
+												<svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M2.03019 1.77684C0.562869 3.18058 0.387088 5.39908 1.61646 6.99837L5 11.4L8.38354 6.99837C9.61292 5.39908 9.43714 3.18058 7.96982 1.77684C6.32963 0.207728 3.67037 0.207728 2.03019 1.77684ZM5 6.60001C5.99412 6.60001 6.8 5.79412 6.8 4.80001C6.8 3.80589 5.99412 3.00001 5 3.00001C4.00589 3.00001 3.2 3.80589 3.2 4.80001C3.2 5.79412 4.00589 6.60001 5 6.60001Z" fill="#2D3132"/>
+												</svg>													
+											</div>
+											<div class="value_location">Кропивницький</div>
+										</div>
+										<div class="nickname">
+											<div class="icon"><img src="./images/dist/avatar/avatar_6.png" alt=""></div>
+											<div class="value">Deeva_Sofia</div>
+										</div>
+									</div>
+								</div>
+						  	</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card">
+							<div class="card-img-top">
+								<ul class="type-product-list">
+									<li class="type-product-list__item organic">organic</li>
+								</ul>
+								<a class="favorite-wrap">
+									<svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M9.53735 3.19604L9.46969 3.26371C7.70072 1.49473 4.83264 1.49473 3.06367 3.2637C1.2947 5.03268 1.29469 7.90075 3.06367 9.66973L6.79699 13.403C8.56597 15.172 11.434 15.172 13.203 13.403L16.9364 9.6697C18.7053 7.90073 18.7053 5.03266 16.9364 3.26368C15.1674 1.49471 12.2993 1.49471 10.5303 3.26368L10.0677 3.72635L9.53735 3.19604ZM14.2637 14.4637L17.997 10.7304C20.3518 8.3756 20.3518 4.55778 17.997 2.20302C15.8118 0.0178142 12.3667 -0.139532 10 1.73099C7.63335 -0.139506 4.18821 0.0178459 2.00301 2.20304C-0.35175 4.5578 -0.351753 8.37563 2.00301 10.7304L5.73633 14.4637L5.73635 14.4637C8.09111 16.8185 11.9089 16.8185 14.2637 14.4637L14.2637 14.4637Z" fill="#2D3132"/>
+									</svg>										
+								</a>
+								<a href="#" class="card-img-link"><img src="./images/dist/clothes/coat.jpeg" alt=""></a>
+								<ul class="type-sale-list">
+									<li class="type-sale-list__item top">ТОП</li>
+								</ul>
+							</div>
+							<div class="card-body">
+								<div class="cart-brand">HACHE</div>
+								<a href="#" class="card-text card-text-link">Салатове пальто Hache</a>
+								<div class="d-flex justify-content-between align-items-center">
+									<div class="price-group">
+										<div class="old">5 999 ₴</div>
+										<div class="current">4 199 ₴ </div>
+									</div>
+									<div class="seller-info">
+										<div class="location">
+											<div class="icon_svg">
+												<svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M2.03019 1.77684C0.562869 3.18058 0.387088 5.39908 1.61646 6.99837L5 11.4L8.38354 6.99837C9.61292 5.39908 9.43714 3.18058 7.96982 1.77684C6.32963 0.207728 3.67037 0.207728 2.03019 1.77684ZM5 6.60001C5.99412 6.60001 6.8 5.79412 6.8 4.80001C6.8 3.80589 5.99412 3.00001 5 3.00001C4.00589 3.00001 3.2 3.80589 3.2 4.80001C3.2 5.79412 4.00589 6.60001 5 6.60001Z" fill="#2D3132"/>
+												</svg>													
+											</div>
+											<div class="value_location">Київ</div>
+										</div>
+										<div class="nickname">
+											<div class="icon"><img src="./images/dist/avatar/avatar_2.png" alt=""></div>
+											<div class="value">LoveBrand</div>
+										</div>
+									</div>
+								</div>
+						  	</div>
+						</div>
+					</div>
+					
+				</div>
+				<div class="row ">
+					<nav aria-label="..." class="d-flex justify-content-center ">
+						<ul class="pagination align-items-center">
+						  <li class="page-item ">
+							<a href="#" class="page-link">Попередня</a>
+						  </li>
+						  <li class="page-item"><a class="page-link" href="#">1</a></li>
+						  <li class="page-item active" aria-current="page">
+							<span class="page-link">2</span>
+						  </li>
+						  <li class="page-item"><a class="page-link" href="#">3</a></li>
+						  <li class="page-item"><a class="page-link" href="#">4</a></li>
+						  <li class="page-item"><a class="page-link" href="#">5</a></li>
+						  <li class="page-item"><a class="page-link" href="#">6</a></li>
+						  <li class="page-item"><a class="page-link" href="#">7</a></li>
+						  <li class="page-item"><a class="page-link" href="#">8</a></li>
+						  <li class="page-item">
+							<a class="page-link" href="#">Наступна</a>
+						  </li>
+						</ul>
+					  </nav>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</div>
+
+<!--#include virtual="/parts/footer.html" -->

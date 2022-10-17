@@ -1,0 +1,423 @@
+// GENERAL PROJECT STYLES
+html, body
+    height: 100%
+.wrapper
+    display: flex
+    flex-direction: column
+    height: 100%
+    .content
+        flex: 1 0 auto
+    .footer
+        flex-shrink: 0
+
+.btn
+    border-radius: 4px
+    font-size: 12px
+    &-dark
+        background: $textcolor
+.nav-link,
+a
+    color: $textcolor
+    text-decoration: none
+    &:hover
+        color: #424649
+
+img, svg
+    max-width: 100%
+
+.dropdown
+    font-size: 12px
+    .dropdown-toggle
+        &::after
+            border: 0
+            border-left: 1px solid #747778
+            border-top: 1px solid #747778
+            width: 8px
+            height: 8px
+            transform: rotate(-135deg)
+    .dropdown-item
+        font-size: 12px
+        color: $textcolor
+
+.preheader
+    background: $bluecolor
+    padding: 6px 0
+    font-size: 16px
+    font-weight: 400
+    color: #0F1A34
+    .pretitle
+        margin-left: 10px
+header.header
+    border-bottom: 1px solid #E0E3E3
+    .top_header_line
+        padding-top: 23px
+        padding-bottom: 23px
+        .serch_header
+            width: 50%
+            position: relative
+            &::before
+                content: ''
+                position: absolute
+                left: 17px
+                width: 20px
+                height: 20px
+                top: calc( 50% - 10px )
+                background-image: url(../images/dist/icon/search.svg)
+                background-repeat: no-repeat
+                background-position: center
+                background-size: contain
+            input
+                font-size: 12px
+                padding-left: 50px
+                height: 40px
+                border: 1.6px solid #E0E3E3
+                border-radius: 4px
+        
+        .icon_nav_header
+            .nav-link
+                padding-left: 13px
+                padding-right: 13px
+                padding-top: 0
+                padding-bottom: 0
+                position: relative
+                .number_value
+                    position: absolute
+                    top: -3px
+                    right: 5px
+                    width: 17px
+                    height: 17px
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    border: 2px solid #fff
+                    border-radius: 50%
+                    font-size: 10px
+                    background: $greycolor
+                    color: $textcolor
+                &.red
+                    .number_value
+                        background: #FF5449
+                        color: #fff
+    .bottom_header_line
+        .nav
+            border-top: 1px solid #E0E3E3
+            width: 100%
+            .nav-link
+                font-size: 13px
+                font-weight: 500
+                text-transform: uppercase
+                letter-spacing: 0.4px
+                border-bottom: 2px solid transparent
+                padding-top: 16px
+                padding-bottom: 16px
+                &.active
+                    border-bottom-color: $textcolor
+    
+
+.footer
+    background: $greycolor
+    &_top_line
+        padding-top: 70px
+        padding-bottom: 70px
+        border-bottom: 1px solid #C4C7C7
+        .nav-link
+            padding: 6px 0
+    &_botom_line
+        padding: 38px 0
+        p
+            margin-bottom: 0
+            font-size: 12px
+            font-weight: 400
+
+.card
+    border-color: $greycolor
+    border-radius: 4px
+    padding: 24px
+    &-img-top
+        padding: 21px 28px
+        position: relative
+        &.organic
+            .type-product-list
+                display: block
+        &.sale
+            .type-sale-list
+                display: block
+        ul
+            list-style: none
+            padding-left: 0
+            margin-bottom: 0
+            &.type-product-list
+                position: absolute
+                left: 0
+                top: 0
+                display: none
+                .type-product-list__item
+                    border-radius: 4px
+                    font-size: 10px
+                    padding: 4px 8px
+                    &.organic
+                        background: #E0E3E3
+                    
+            &.type-sale-list
+                position: absolute
+                bottom: 0
+                left: 0
+                display: none
+                .type-sale-list__item
+                    border-radius: 4px
+                    font-size: 10px
+                    padding: 4px 8px
+                    text-transform: uppercase
+                    &.top
+                        background: #B4FFF0
+                    
+        .favorite-wrap
+            position: absolute
+            right: 0
+            top: 0
+            display: block
+    &-body
+        padding: 0
+        margin-top: 16px
+        .cart-brand
+            font-size: 10px
+            text-transform: uppercase
+            color: #5C5F60
+            margin-bottom: 4px
+        .card-text
+            font-size: 14px
+            margin-bottom: 24px
+            display: block
+        .price-group
+            .old
+                font-size: 12px
+                color: #747778
+                text-decoration: line-through
+            .current
+                font-size: 14px
+        .seller-info
+            .location
+                display: flex
+                justify-content: flex-end
+                align-items: center
+                font-size: 12px
+                .icon_svg
+                    margin-right: 4px
+                .value_location
+                    font-size: 14px
+            .nickname
+                font-size: 14px
+                display: flex
+                justify-content: flex-end
+                align-items: center
+                margin-top: 4px
+                .icon
+                    margin-right: 8px
+                    width: 20px
+                    height: 20px
+                    border-radius: 50%
+
+.pagination
+    .page-item 
+        margin: 0 4px
+        &:first-child 
+            .page-link
+                border-radius: 35px
+                font-size: 12px
+        &:last-child 
+            .page-link
+                border-radius: 35px
+                font-size: 12px
+        &.active
+            .page-link
+                font-size: 12px
+                color: $textcolor   
+                border-color: $textcolor
+                background: transparent
+    .page-link
+        color: #5C5F60
+        border-radius: 50%
+        font-size: 10px
+        border-width: 2px
+
+.breadcrumb_wrap
+    margin-top: 30px
+    margin-bottom: 30px
+
+.breadcrumb
+    .breadcrumb-item
+        font-size: 12px
+        &.active
+            color: #747778
+    a
+        font-size: 12px
+
+
+.form-group
+    input[type="checkbox"]
+        position: absolute // take it out of document flow
+        opacity: 0 // hide it
+
+        & + label
+            position: relative
+            cursor: pointer
+            padding: 0
+            font-size: 14px
+            display: flex
+            justify-content: flex-start
+            align-items: center
+
+        // Box.
+        & + label:before 
+            content: ''
+            margin-right: 17px
+            display: inline-block
+            width: 16px
+            height: 16px
+            background: transparent
+            border: 2px solid #C4C7C7
+            border-radius: 4px
+
+        // Box hover
+        &:hover + label:before
+            background: transparent
+        
+        // Box focus
+        &:focus + label:before
+            box-shadow: none
+
+        // Box checked
+        &:checked + label:before 
+            background: $textcolor
+            border-color: $textcolor
+        
+        // Disabled state label.
+        &:disabled + label
+            color: #b8b8b8
+            cursor: auto
+
+        // Disabled box.
+        &:disabled + label:before
+            box-shadow: none
+            background: #C4C7C7
+
+        // Checkmark. Could be replaced with an image
+        &:checked + label:after 
+            content: ''
+            position: absolute
+            left: 6px
+            top: 6px
+            width: 4px
+            height: 7px
+            transform: rotate(-135deg)
+            border-top: 1px solid #fff
+            border-left: 1px solid #fff
+    
+
+
+.catalog
+    .card
+        height: 100%
+    .pagination
+        margin-top: 55px
+        margin-bottom: 110px
+.catalog_wrap
+    .title-page
+        font-size: 28px
+        font-weight: 400
+        margin-bottom: 32px
+    .subtitle-page
+        margin-bottom: 24px
+        h2
+            font-size: 22px
+            color: #5C5F60
+            margin-bottom: 0
+        .sorting-catalog
+            display: flex
+            justify-content: flex-end
+            align-items: center
+            
+            .subtitle-dropdown
+                font-size: 12px
+                color: #5C5F60
+                margin-right: 12px
+                
+            .dropdown-toggle
+                background: $greycolor
+                font-size: 12px
+                padding: 8px 45px 8px 12px
+                border-radius: 35px
+                position: relative
+                &::after
+                    position: absolute
+                    right: 15px
+                    top: calc( 50% - 6px )
+                &::before
+                    content: ''
+                    position: absolute
+                    right: 34px
+                    top: 0
+                    bottom: 0
+                    width: 1px
+                    background: #fff
+
+.sidebar
+    .filter__item
+        margin-bottom: 2px
+        &-title
+            background: $greycolor
+            display: flex
+            justify-content: space-between
+            align-items: center
+            padding: 16px 24px
+            cursor: pointer
+            user-select: none
+            .icon_arrow
+                transition: all 0.2s
+            &.active
+                .icon_arrow
+                    transform: rotate(-180deg)
+                    transition: all 0.2s
+        &-content
+            border: 1px solid $greycolor
+            border-top: 0
+            padding: 18px 24px
+            display: none
+            .form-group
+                padding-top: 5px
+                padding-bottom: 5px
+
+.price-filter-range
+    &.ui-widget.ui-widget-content
+        height: 4px
+        background: #C4C7C7
+        border: 0
+        margin-top: 7px
+        .ui-slider-range
+            background: #8E9192
+        .ui-slider-handle
+            background: #5C5F60
+            border: 0
+            border-radius: 4px
+            top: -.45em
+            &.ui-state-focus
+                border: 0
+.price-range-field-wrap
+    margin-top: 30px
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    .price-range-field__item
+        width: 47%
+        .price-range-field
+            border: 0
+            border-bottom: 1px solid #C4C7C7
+            padding: 0 0 13px 0
+            font-size: 12px
+            width: 100%
+
+    .subtitle
+        font-size: 10px
+        color: #747778
+        margin-bottom: 8px
+/*--- /.price-range-slider ---*/
